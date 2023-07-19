@@ -84,7 +84,7 @@ async function removeFromfavorites(id) {
     }
     //Alerting the user and refreshing the page
     alert('Movie Removed from Watchlist');
-    window.location.replace('fav.html');
+    window.location.replace('favorite.html');
 }
 
 //Displaying the movie list on the search page according to the user list
@@ -155,6 +155,7 @@ async function favoritesMovieLoader() {
             const res = await fetch(`${url}`);
             const data = await res.json();
             console.log(data);
+            console.log(url);
 
 
             var img = ''
