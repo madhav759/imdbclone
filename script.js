@@ -155,7 +155,6 @@ async function favoritesMovieLoader() {
             const res = await fetch(`${url}`);
             const data = await res.json();
             console.log(data);
-            console.log(url);
 
 
             var img = ''
